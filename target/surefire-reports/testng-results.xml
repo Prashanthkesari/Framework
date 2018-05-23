@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" total="1" passed="1">
+  <reporter-output>
+  </reporter-output>
+  <suite name="org.tekSystems.automation.SeleniumAutomation.HomeTest" duration-ms="25850" started-at="2018-05-22T09:18:00Z" finished-at="2018-05-22T09:18:25Z">
+    <groups>
+    </groups>
+    <test name="Command line test" duration-ms="25850" started-at="2018-05-22T09:18:00Z" finished-at="2018-05-22T09:18:25Z">
+      <class name="org.tekSystems.automation.SeleniumAutomation.HomeTest">
+        <test-method status="PASS" signature="initializeWebDriver()[pri:0, instance:org.tekSystems.automation.SeleniumAutomation.HomeTest@9f70c54]" name="initializeWebDriver" is-config="true" duration-ms="13634" started-at="2018-05-22T14:47:46Z" finished-at="2018-05-22T14:48:00Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initializeWebDriver -->
+        <test-method status="PASS" signature="launchApplication(java.lang.reflect.Method)[pri:0, instance:org.tekSystems.automation.SeleniumAutomation.HomeTest@9f70c54]" name="launchApplication" is-config="true" duration-ms="23" started-at="2018-05-22T14:48:00Z" finished-at="2018-05-22T14:48:00Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void org.tekSystems.automation.SeleniumAutomation.HomeTest.login() throws java.lang.Exception]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchApplication -->
+        <test-method status="PASS" signature="login()[pri:0, instance:org.tekSystems.automation.SeleniumAutomation.HomeTest@9f70c54]" name="login" duration-ms="25789" started-at="2018-05-22T14:48:00Z" finished-at="2018-05-22T14:48:25Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- login -->
+        <test-method status="PASS" signature="endReport()[pri:0, instance:org.tekSystems.automation.SeleniumAutomation.HomeTest@9f70c54]" name="endReport" is-config="true" duration-ms="5" started-at="2018-05-22T14:48:25Z" finished-at="2018-05-22T14:48:25Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- endReport -->
+        <test-method status="PASS" signature="afterSuite()[pri:0, instance:org.tekSystems.automation.SeleniumAutomation.HomeTest@9f70c54]" name="afterSuite" is-config="true" duration-ms="3951" started-at="2018-05-22T14:48:25Z" finished-at="2018-05-22T14:48:29Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterSuite -->
+      </class> <!-- org.tekSystems.automation.SeleniumAutomation.HomeTest -->
+    </test> <!-- Command line test -->
+  </suite> <!-- org.tekSystems.automation.SeleniumAutomation.HomeTest -->
+</testng-results>

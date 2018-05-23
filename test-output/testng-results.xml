@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="1" ignored="0" total="1" passed="0">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Suite" duration-ms="43562" started-at="2018-05-23T08:06:40Z" finished-at="2018-05-23T08:07:23Z">
+    <groups>
+    </groups>
+    <test name="Test" duration-ms="43562" started-at="2018-05-23T08:06:40Z" finished-at="2018-05-23T08:07:23Z">
+      <class name="org.tekSystems.automation.SeleniumAutomation.WorldBankAssignment">
+        <test-method status="PASS" signature="initializeWebDriver()[pri:0, instance:org.tekSystems.automation.SeleniumAutomation.WorldBankAssignment@64f6106c]" name="initializeWebDriver" is-config="true" duration-ms="16002" started-at="2018-05-23T08:06:24Z" finished-at="2018-05-23T08:06:40Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initializeWebDriver -->
+        <test-method status="PASS" signature="launchApplication(java.lang.reflect.Method)[pri:0, instance:org.tekSystems.automation.SeleniumAutomation.WorldBankAssignment@64f6106c]" name="launchApplication" is-config="true" duration-ms="15" started-at="2018-05-23T08:06:40Z" finished-at="2018-05-23T08:06:40Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void org.tekSystems.automation.SeleniumAutomation.WorldBankAssignment.login() throws java.lang.Exception]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchApplication -->
+        <test-method status="FAIL" signature="login()[pri:0, instance:org.tekSystems.automation.SeleniumAutomation.WorldBankAssignment@64f6106c]" name="login" duration-ms="43470" started-at="2018-05-23T08:06:40Z" finished-at="2018-05-23T08:07:23Z">
+          <exception class="java.lang.NullPointerException">
+            <full-stacktrace>
+              <![CDATA[java.lang.NullPointerException
+at org.tekSystems.automation.SeleniumAutomation.GlobalFunctions.navigateBack(GlobalFunctions.java:61)
+at pageClasses.WorldBankProjects.getOperationsValue(WorldBankProjects.java:66)
+at org.tekSystems.automation.SeleniumAutomation.WorldBankAssignment.login(WorldBankAssignment.java:16)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+at java.lang.reflect.Method.invoke(Unknown Source)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:580)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:716)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:988)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+at org.testng.TestNG.runSuites(TestNG.java:1049)
+at org.testng.TestNG.run(TestNG.java:1017)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NullPointerException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- login -->
+        <test-method status="PASS" signature="endReport()[pri:0, instance:org.tekSystems.automation.SeleniumAutomation.WorldBankAssignment@64f6106c]" name="endReport" is-config="true" duration-ms="5" started-at="2018-05-23T08:07:23Z" finished-at="2018-05-23T08:07:23Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- endReport -->
+        <test-method status="PASS" signature="afterSuite()[pri:0, instance:org.tekSystems.automation.SeleniumAutomation.WorldBankAssignment@64f6106c]" name="afterSuite" is-config="true" duration-ms="2927" started-at="2018-05-23T08:07:23Z" finished-at="2018-05-23T08:07:26Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterSuite -->
+      </class> <!-- org.tekSystems.automation.SeleniumAutomation.WorldBankAssignment -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
+</testng-results>

@@ -1,0 +1,29 @@
+<project name="SeleniumAutomation" default="jar" basedir=".">
+	
+
+<target name="clean" description="Removing the all generated files.">
+<delete dir="build"/>
+<delete dir="dest"/>
+<delete dir="src"/>
+</target>
+
+<target name="create" depends="clean">
+<mkdir dir="build"/>
+<mkdir dir="dest"/>
+<mkdir dir="src"/>
+</target>
+
+<target name="copy" depends="">
+	<copydir src="D:\Java\WrkspaceEclipse\SeleniumAutomation\src\main\java" dest="D:\Java\WrkspaceEclipse\SeleniumAutomation\ant\biuld\src"></copydir>
+</target>
+
+<target name="compile" depends="copy" description="Compilation of all source code.">
+<javac includeantruntime="ture" srcdir="D:\Java\WrkspaceEclipse\SeleniumAutomation\src" destdir="build"/>
+</target>
+
+<target name="jar" depends="compile" description="Generates tekAutomation.jar file in to the 'dest' directory.">
+<jar jarfile="dest/tekAutomation.jar" basedir="build"/>
+</target>
+
+	
+</project>

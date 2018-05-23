@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- WARNING: Eclipse auto-generated file.
+              Any modifications will be overwritten.
+              To include a user specific buildfile here, simply create one in the same
+              directory with the processing instruction <?eclipse.ant.import?>
+              as the first entry and export the buildfile again. --><project basedir="." default="build" name="SeleniumAutomation">
+    <property environment="env"/>
+    <property name="ECLIPSE_HOME" value="../../../Softwares/eclipse-jee-mars-1-win32-x86_64/eclipse/"/>
+    <property name="debuglevel" value="source,lines,vars"/>
+    <property name="target" value="1.7"/>
+    <property name="source" value="1.7"/>
+    <path id="Maven Dependencies.libraryclasspath">
+        <pathelement location="C:/Users/pkesari/.m2/repository/org/seleniumhq/selenium/selenium-java/3.11.0/selenium-java-3.11.0.jar"/>
+        <pathelement location="C:/Users/pkesari/.m2/repository/org/seleniumhq/selenium/selenium-api/3.11.0/selenium-api-3.11.0.jar"/>
+        <pathelement location="C:/Users/pkesari/.m2/repository/org/seleniumhq/selenium/selenium-chrome-driver/3.11.0/selenium-chrome-driver-3.11.0.jar"/>
+        <pathelement location="C:/Users/pkesari/.m2/repository/org/seleniumhq/selenium/selenium-edge-driver/3.11.0/selenium-edge-driver-3.11.0.jar"/>
+        <pathelement location="C:/Users/pkesari/.m2/repository/org/seleniumhq/selenium/selenium-firefox-driver/3.11.0/selenium-firefox-driver-3.11.0.jar"/>
+        <pathelement location="C:/Users/pkesari/.m2/repository/org/seleniumhq/selenium/selenium-ie-driver/3.11.0/selenium-ie-driver-3.11.0.jar"/>
+        <pathelement location="C:/Users/pkesari/.m2/repository/org/seleniumhq/selenium/selenium-opera-driver/3.11.0/selenium-opera-driver-3.11.0.jar"/>
+        <pathelement location="C:/Users/pkesari/.m2/repository/org/seleniumhq/selenium/selenium-remote-driver/3.11.0/selenium-remote-driver-3.11.0.jar"/>
+        <pathelement location="C:/Users/pkesari/.m2/repository/org/seleniumhq/selenium/selenium-safari-driver/3.11.0/selenium-safari-driver-3.11.0.jar"/>
+        <pathelement location="C:/Users/pkesari/.m2/repository/org/seleniumhq/selenium/selenium-support/3.11.0/selenium-support-3.11.0.jar"/>
+        <pathelement location="C:/Users/pkesari/.m2/repository/net/bytebuddy/byte-buddy/1.7.9/byte-buddy-1.7.9.jar"/>
+        <pathelement location="C:/Users/pkesari/.m2/repository/org/apache/commons/commons-exec/1.3/commons-exec-1.3.jar"/>
+        <pathelement location="C:/Users/pkesari/.m2/repository/commons-codec/commons-codec/1.10/commons-codec-1.10.jar"/>
+        <pathelement location="C:/Users/pkesari/.m2/repository/commons-logging/commons-logging/1.2/commons-logging-1.2.jar"/>
+        <pathelement location="C:/Users/pkesari/.m2/repository/com/google/code/gson/gson/2.8.2/gson-2.8.2.jar"/>
+        <pathelement location="C:/Users/pkesari/.m2/repository/com/google/guava/guava/23.6-jre/guava-23.6-jre.jar"/>
+        <pathelement location="C:/Users/pkesari/.m2/repository/com/google/code/findbugs/jsr305/1.3.9/jsr305-1.3.9.jar"/>
+        <pathelement location="C:/Users/pkesari/.m2/repository/org/checkerframework/checker-compat-qual/2.0.0/checker-compat-qual-2.0.0.jar"/>
+        <pathelement location="C:/Users/pkesari/.m2/repository/com/google/errorprone/error_prone_annotations/2.1.3/error_prone_annotations-2.1.3.jar"/>
+        <pathelement location="C:/Users/pkesari/.m2/repository/com/google/j2objc/j2objc-annotations/1.1/j2objc-annotations-1.1.jar"/>
+        <pathelement location="C:/Users/pkesari/.m2/repository/org/codehaus/mojo/animal-sniffer-annotations/1.14/animal-sniffer-annotations-1.14.jar"/>
+        <pathelement location="C:/Users/pkesari/.m2/repository/org/apache/httpcomponents/httpclient/4.5.3/httpclient-4.5.3.jar"/>
+        <pathelement location="C:/Users/pkesari/.m2/repository/org/apache/httpcomponents/httpcore/4.4.6/httpcore-4.4.6.jar"/>
+        <pathelement location="C:/Users/pkesari/.m2/repository/com/squareup/okhttp3/okhttp/3.9.1/okhttp-3.9.1.jar"/>
+        <pathelement location="C:/Users/pkesari/.m2/repository/com/squareup/okio/okio/1.13.0/okio-1.13.0.jar"/>
+        <pathelement location="C:/Users/pkesari/.m2/repository/org/seleniumhq/selenium/selenium-server/3.11.0/selenium-server-3.11.0.jar"/>
+        <pathelement location="C:/Users/pkesari/.m2/repository/com/beust/jcommander/1.72/jcommander-1.72.jar"/>
+        <pathelement location="C:/Users/pkesari/.m2/repository/org/apache/commons/commons-lang3/3.7/commons-lang3-3.7.jar"/>
+        <pathelement location="C:/Users/pkesari/.m2/repository/org/apache/commons/commons-text/1.1/commons-text-1.1.jar"/>
+        <pathelement location="C:/Users/pkesari/.m2/repository/commons-io/commons-io/2.6/commons-io-2.6.jar"/>
+        <pathelement location="C:/Users/pkesari/.m2/repository/commons-net/commons-net/3.6/commons-net-3.6.jar"/>
+        <pathelement location="C:/Users/pkesari/.m2/repository/org/w3c/css/sac/1.3/sac-1.3.jar"/>
+        <pathelement location="C:/Users/pkesari/.m2/repository/net/sourceforge/cssparser/cssparser/0.9.24/cssparser-0.9.24.jar"/>
+        <pathelement location="C:/Users/pkesari/.m2/repository/net/sourceforge/htmlunit/htmlunit/2.29/htmlunit-2.29.jar"/>
+        <pathelement location="C:/Users/pkesari/.m2/repository/net/sourceforge/htmlunit/htmlunit-core-js/2.28/htmlunit-core-js-2.28.jar"/>
+        <pathelement location="C:/Users/pkesari/.m2/repository/net/sourceforge/htmlunit/neko-htmlunit/2.28/neko-htmlunit-2.28.jar"/>
+        <pathelement location="C:/Users/pkesari/.m2/repository/org/apache/httpcomponents/httpmime/4.5.3/httpmime-4.5.3.jar"/>
+        <pathelement location="C:/Users/pkesari/.m2/repository/net/jcip/jcip-annotations/1.0/jcip-annotations-1.0.jar"/>
+        <pathelement location="C:/Users/pkesari/.m2/repository/org/seleniumhq/selenium/jetty-repacked/9.4.7.v20171121/jetty-repacked-9.4.7.v20171121.jar"/>
+        <pathelement location="C:/Users/pkesari/.m2/repository/org/eclipse/jetty/jetty-client/9.4.7.v20170914/jetty-client-9.4.7.v20170914.jar"/>
+        <pathelement location="C:/Users/pkesari/.m2/repository/org/eclipse/jetty/jetty-http/9.4.8.v20171121/jetty-http-9.4.8.v20171121.jar"/>
+        <pathelement location="C:/Users/pkesari/.m2/repository/org/eclipse/jetty/jetty-io/9.4.8.v20171121/jetty-io-9.4.8.v20171121.jar"/>
+        <pathelement location="C:/Users/pkesari/.m2/repository/org/eclipse/jetty/jetty-util/9.4.8.v20171121/jetty-util-9.4.8.v20171121.jar"/>
+        <pathelement location="C:/Users/pkesari/.m2/repository/org/eclipse/jetty/jetty-xml/9.4.7.v20170914/jetty-xml-9.4.7.v20170914.jar"/>
+        <pathelement location="C:/Users/pkesari/.m2/repository/org/seleniumhq/selenium/htmlunit-driver/2.29.0/htmlunit-driver-2.29.0.jar"/>
+        <pathelement location="C:/Users/pkesari/.m2/repository/javax/servlet/javax.servlet-api/3.1.0/javax.servlet-api-3.1.0.jar"/>
+        <pathelement location="C:/Users/pkesari/.m2/repository/org/eclipse/jetty/websocket/websocket-api/9.4.7.v20170914/websocket-api-9.4.7.v20170914.jar"/>
+        <pathelement location="C:/Users/pkesari/.m2/repository/org/eclipse/jetty/websocket/websocket-client/9.4.7.v20170914/websocket-client-9.4.7.v20170914.jar"/>
+        <pathelement location="C:/Users/pkesari/.m2/repository/org/eclipse/jetty/websocket/websocket-common/9.4.7.v20170914/websocket-common-9.4.7.v20170914.jar"/>
+        <pathelement location="C:/Users/pkesari/.m2/repository/xalan/serializer/2.7.2/serializer-2.7.2.jar"/>
+        <pathelement location="C:/Users/pkesari/.m2/repository/xalan/xalan/2.7.2/xalan-2.7.2.jar"/>
+        <pathelement location="C:/Users/pkesari/.m2/repository/xerces/xercesImpl/2.11.0/xercesImpl-2.11.0.jar"/>
+        <pathelement location="C:/Users/pkesari/.m2/repository/xml-apis/xml-apis/1.4.01/xml-apis-1.4.01.jar"/>
+        <pathelement location="C:/Users/pkesari/.m2/repository/org/yaml/snakeyaml/1.19/snakeyaml-1.19.jar"/>
+        <pathelement location="C:/Users/pkesari/.m2/repository/com/relevantcodes/extentreports/2.40.2/extentreports-2.40.2.jar"/>
+        <pathelement location="C:/Users/pkesari/.m2/repository/org/jsoup/jsoup/1.8.3/jsoup-1.8.3.jar"/>
+        <pathelement location="C:/Users/pkesari/.m2/repository/org/xerial/sqlite-jdbc/3.8.11.1/sqlite-jdbc-3.8.11.1.jar"/>
+        <pathelement location="C:/Users/pkesari/.m2/repository/org/freemarker/freemarker/2.3.23/freemarker-2.3.23.jar"/>
+        <pathelement location="C:/Users/pkesari/.m2/repository/com/aventstack/extentreports/3.1.5/extentreports-3.1.5.jar"/>
+        <pathelement location="C:/Users/pkesari/.m2/repository/org/mongodb/mongodb-driver/3.3.0/mongodb-driver-3.3.0.jar"/>
+        <pathelement location="C:/Users/pkesari/.m2/repository/org/mongodb/bson/3.3.0/bson-3.3.0.jar"/>
+        <pathelement location="C:/Users/pkesari/.m2/repository/org/mongodb/mongodb-driver-core/3.3.0/mongodb-driver-core-3.3.0.jar"/>
+        <pathelement location="C:/Users/pkesari/.m2/repository/org/apache/ant/ant/1.9.4/ant-1.9.4.jar"/>
+        <pathelement location="C:/Users/pkesari/.m2/repository/org/apache/ant/ant-launcher/1.9.4/ant-launcher-1.9.4.jar"/>
+        <pathelement location="C:/Users/pkesari/.m2/repository/org/testng/testng/6.8/testng-6.8.jar"/>
+        <pathelement location="C:/Users/pkesari/.m2/repository/junit/junit/4.10/junit-4.10.jar"/>
+        <pathelement location="C:/Users/pkesari/.m2/repository/org/hamcrest/hamcrest-core/1.1/hamcrest-core-1.1.jar"/>
+        <pathelement location="C:/Users/pkesari/.m2/repository/org/beanshell/bsh/2.0b4/bsh-2.0b4.jar"/>
+    </path>
+    <path id="TestNG.libraryclasspath">
+        <pathelement location="${ECLIPSE_HOME}plugins/org.testng_6.14.2.r201802161450.jar"/>
+        <pathelement location="${ECLIPSE_HOME}plugins/com.beust.jcommander_1.72.0.jar"/>
+        <pathelement location="${ECLIPSE_HOME}plugins/org.apache-extras.beanshell.bsh_2.0.0.b6.jar"/>
+        <pathelement location="${ECLIPSE_HOME}plugins/org.yaml.snakeyaml_1.17.0.jar"/>
+    </path>
+    <path id="SeleniumAutomation.classpath">
+        <pathelement location="target/classes"/>
+        <pathelement location="target/test-classes"/>
+        <path refid="Maven Dependencies.libraryclasspath"/>
+        <path refid="TestNG.libraryclasspath"/>
+    </path>
+    <path id="run.DataProvider.classpath">
+        <path refid="SeleniumAutomation.classpath"/>
+        <path refid="Maven Dependencies.libraryclasspath"/>
+    </path>
+    <path id="run.DataProviderXML.classpath">
+        <path refid="SeleniumAutomation.classpath"/>
+        <path refid="Maven Dependencies.libraryclasspath"/>
+    </path>
+    <target name="init">
+        <mkdir dir="target/classes"/>
+        <mkdir dir="target/test-classes"/>
+        <copy includeemptydirs="false" todir="target/classes">
+            <fileset dir="src/main/java">
+                <exclude name="**/*.launch"/>
+                <exclude name="**/*.java"/>
+            </fileset>
+        </copy>
+        <copy includeemptydirs="false" todir="target/test-classes">
+            <fileset dir="src/test/java">
+                <exclude name="**/*.launch"/>
+                <exclude name="**/*.java"/>
+            </fileset>
+        </copy>
+    </target>
+    <target name="clean">
+        <delete dir="target/classes"/>
+        <delete dir="target/test-classes"/>
+    </target>
+    <target depends="clean" name="cleanall"/>
+    <target depends="build-subprojects,build-project" name="build"/>
+    <target name="build-subprojects"/>
+    <target depends="init" name="build-project">
+        <echo message="${ant.project.name}: ${ant.file}"/>
+        <javac debug="true" debuglevel="${debuglevel}" destdir="target/classes" includeantruntime="false" source="${source}" target="${target}">
+            <src path="src/main/java"/>
+            <classpath refid="SeleniumAutomation.classpath"/>
+        </javac>
+        <javac debug="true" debuglevel="${debuglevel}" destdir="target/test-classes" includeantruntime="false" source="${source}" target="${target}">
+            <src path="src/test/java"/>
+            <classpath refid="SeleniumAutomation.classpath"/>
+        </javac>
+    </target>
+    <target description="Build all projects which reference this project. Useful to propagate changes." name="build-refprojects"/>
+    <target description="copy Eclipse compiler jars to ant lib directory" name="init-eclipse-compiler">
+        <copy todir="${ant.library.dir}">
+            <fileset dir="${ECLIPSE_HOME}/plugins" includes="org.eclipse.jdt.core_*.jar"/>
+        </copy>
+        <unzip dest="${ant.library.dir}">
+            <patternset includes="jdtCompilerAdapter.jar"/>
+            <fileset dir="${ECLIPSE_HOME}/plugins" includes="org.eclipse.jdt.core_*.jar"/>
+        </unzip>
+    </target>
+    <target description="compile project with Eclipse compiler" name="build-eclipse-compiler">
+        <property name="build.compiler" value="org.eclipse.jdt.core.JDTCompilerAdapter"/>
+        <antcall target="build"/>
+    </target>
+    <target name="DataProvider">
+        <java classname="org.tekSystems.automation.SeleniumAutomation.DataProvider" failonerror="true" fork="yes">
+            <classpath refid="run.DataProvider.classpath"/>
+        </java>
+    </target>
+    <target name="DataProviderXML">
+        <java classname="org.tekSystems.automation.SeleniumAutomation.DataProviderXML" failonerror="true" fork="yes">
+            <classpath refid="run.DataProviderXML.classpath"/>
+        </java>
+    </target>
+</project>

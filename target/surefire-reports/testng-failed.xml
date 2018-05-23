@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite verbose="0" name="Failed suite [org.tekSystems.automation.SeleniumAutomation.HomeTest]">
+  <test name="Command line test(failed)">
+    <classes>
+      <class name="org.tekSystems.automation.SeleniumAutomation.HomeTest">
+        <methods>
+          <include name="afterSuite"/>
+          <include name="initializeWebDriver"/>
+          <include name="endReport"/>
+          <include name="login"/>
+          <include name="launchApplication"/>
+        </methods>
+      </class> <!-- org.tekSystems.automation.SeleniumAutomation.HomeTest -->
+    </classes>
+  </test> <!-- Command line test(failed) -->
+</suite> <!-- Failed suite [org.tekSystems.automation.SeleniumAutomation.HomeTest] -->
