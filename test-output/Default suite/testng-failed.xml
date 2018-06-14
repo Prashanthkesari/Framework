@@ -3,15 +3,15 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="org.tekSystems.automation.SeleniumAutomation.HomeTest">
+      <class name="org.tekSystems.automation.SeleniumAutomation.ClearTrip">
         <methods>
           <include name="afterSuite"/>
           <include name="initializeWebDriver"/>
           <include name="endReport"/>
-          <include name="login"/>
-          <include name="launchApplication"/>
+          <include name="reportTest"/>
+          <include name="hotelReservation"/>
         </methods>
-      </class> <!-- org.tekSystems.automation.SeleniumAutomation.HomeTest -->
+      </class> <!-- org.tekSystems.automation.SeleniumAutomation.ClearTrip -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

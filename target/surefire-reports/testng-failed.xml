@@ -9,7 +9,7 @@
           <include name="initializeWebDriver"/>
           <include name="endReport"/>
           <include name="login"/>
-          <include name="launchApplication"/>
+          <include name="reportTest"/>
         </methods>
       </class> <!-- org.tekSystems.automation.SeleniumAutomation.HomeTest -->
     </classes>

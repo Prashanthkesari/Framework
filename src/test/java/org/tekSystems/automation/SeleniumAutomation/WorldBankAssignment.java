@@ -4,19 +4,15 @@ import org.testng.annotations.Test;
 
 import pageClasses.WorldBankProjects;
 
+public class WorldBankAssignment extends TekBase {
 
-public class WorldBankAssignment extends TekBase{
-	
+	@Test(enabled = false)
+	public void login() throws Exception {
 
-	@Test
-	public void login() throws Exception{
-		
-			
-		WorldBankProjects getData = new WorldBankProjects(driver);
-		getData.getOperationsValue();
+		WorldBankProjects worldBankProject = new WorldBankProjects(driver);
+		worldBankProject.navigatetoProjectPage();
+		worldBankProject.getOperationsValue("Middle East and North Africa");
+		//worldBankProject.sortCoutriesOnValue(map);
 	}
-	
-	
-	
 
 }

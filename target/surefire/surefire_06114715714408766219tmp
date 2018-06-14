@@ -1,0 +1,6 @@
+#surefire_0
+#Wed Jun 06 10:52:53 IST 2018
+suite=testng
+basedir=d\:\\Java\\WrkspaceEclipse\\SeleniumAutomation
+user.dir=d\:\\Java\\WrkspaceEclipse\\SeleniumAutomation
+localRepository=C\:\\Users\\pkesari\\.m2\\repository
